@@ -1,0 +1,213 @@
+<!-- /* Written by Sooin Lee during the class of Himedia Academy */ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="source/images/s-images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="source/js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#menu_toggle_btn").click(function(){$("#gnb").stop().slideToggle("fast")});
+        });
+	</script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="cfixed">
+            <h1 id="logo"><a href="front1.html">SOOIN</a></h1>
+            <nav>
+                <ul id="gnb">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <span id="menu_toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </header>
+        <article class="slider">
+            <img src="source/images/p-images/slide01.jpg" alt="square">
+        </article>
+        <section id="content">
+            <section id="display_section">
+                <div class="container">
+                    <h2 class="sec_tit">WE ARE</h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non commodi expedita quisquam provident, quibusdam alias consectetur possimus!</p>
+                </div>
+            </section>
+            <section id="promotion_section">
+                <div class="container">
+                    <ul class="promotion_list">
+                        <li>
+                            <a href="#">
+                                <img src="source/images/s-images/promo01.png" alt="">
+                                <h3>HOME</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus error optio quisquam delectus dolorem?</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="source/images/s-images/promo02.png" alt="">
+                                <h3>ABOUT</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus error optio quisquam delectus dolorem?</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="source/images/s-images/promo03.png" alt="">
+                                <h3>WORK</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus error optio quisquam delectus dolorem?</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="source/images/s-images/promo04.png" alt="">
+                                <h3>BLOG</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus error optio quisquam delectus dolorem?</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="divider">
+            <section id="work_section">
+                <h2 class="sec_tit">WORK</h2>
+                <ul class="work_list">
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>KOREA</h3>
+                                <span>Seoul</span>
+                            </div>
+                            <img src="source/images/p-images/work01.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>TAIWAN</h3>
+                                <span>Taipei</span>
+                            </div>
+                            <img src="source/images/p-images/work02.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>SINGAPORE</h3>
+                                <span>Singapore</span>
+                            </div>
+                            <img src="source/images/p-images/work03.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>HONG KONG</h3>
+                                <span>Hong kong</span>
+                            </div>
+                            <img src="source/images/p-images/work04.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>THE UNITED KINGDOM</h3>
+                                <span>London</span>
+                            </div>
+                            <img src="source/images/p-images/work05.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>GERMANY</h3>
+                                <span>Berlin</span>
+                            </div>
+                            <img src="source/images/p-images/work06.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>THE UNITED STATES</h3>
+                                <span>New York</span>
+                            </div>
+                            <img src="source/images/p-images/work07.jpg" alt="skate board"></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>CZECH REPUBLIC</h3>
+                                <span>Prague</span>
+                            </div>
+                            <img src="source/images/p-images/work08.jpg" alt="basketball"></a>
+                    </li>
+                </ul>
+            </section>
+            <hr class="m_divider">
+            <section id="blog_section">
+                <div class="container">
+                    <h2 class="sec_tit">BLOG</h2>
+                    <ul id="blog_list">
+                        <li>
+                            <a href=""><img src="source/images/p-images/blog01.jpg" alt=""></a>
+                            <time datetime="2016-10-30">OCT 30, 2016</time>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, at?</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="source/images/p-images/blog02.jpg" alt=""></a>
+                            <time datetime="2016-10-30">OCT 30, 2016</time>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, at?</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="source/images/p-images/blog03.jpg" alt=""></a>
+                            <time datetime="2016-10-30">OCT 30, 2016</time>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, at?</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact_section">
+                <div class="container">
+                    <h2 class="sec_tit">CONTACT</h2>
+                    <div class="form_box">
+                        <form action="abc.asp" method="post">
+                            <fieldset class="fieldset">
+                                <div class="form">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" placeholder="Name">
+                                    <label for="name">Phone</label>
+                                    <input type="text" id="phone" placeholder="Phone">
+                                    <label for="email">Email Address</label>
+                                    <input type="text" id="email" placeholder="Email">
+                                </div>
+                                <div class="textarea">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                                </div>
+                            </fieldset>
+                            <div class="send_btn">
+                                <button>SEND MESSAGE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer id="footer">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.1707372479!2d-122.50763993689054!3d37.75767927566046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2skr!4v1641174478899!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>SOOIN</p>
+        </footer>
+    </div>
+</body>
+</html>

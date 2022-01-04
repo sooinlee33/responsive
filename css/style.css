@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+.container { width: 90%; max-width: 1132px; margin: 0 auto;}
+.blind { position: absolute; width: 0; height: 0; line-height: 0; text-indent: -99999px; overflow: hidden;}
+.cfixed:after, .container:after { display: block; content: ''; clear: both;}
+.sec_tit { font-size: 42px; color: #3f51b5; font-weight: normal; margin-bottom: 30px; margin-top: 64px;}
+.divider { width: 90%; max-width: 1132px; margin: 0 auto; background: #eee; margin-top: 77px;}
+.m_divider { width: 20px; margin: 0 auto; margin-top: 77px; background: #3f51b5;}
+#wrap { text-align: center; }
+label { display: none;}
+
+/* HEADER */
+#header { position: relative; padding: 18px 5%;}
+#header #logo { float: left;}
+#header #logo a { color:#3f51b5; font-size: 26px; font-weight: normal; text-transform: uppercase;}
+
+#header #gnb { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: #3f51b5; text-align: left;}
+#header #gnb li { border-bottom: 1px solid #3f51b5;}
+#header #gnb a { display: block; color: white; padding: 21px 5%; font-size: 14px; }
+#header #menu_toggle_btn { float: right; width: 20px; cursor: pointer; padding: 5px 0;}
+#header #menu_toggle_btn span { display: block; width: 100%; height: 2px; background: #3f51b5;}
+#header #menu_toggle_btn span:nth-child(2){margin: 5px 0;}
+
+/* 슬라이더 영역 */
+.slider { width: 100%;}
+.slider img { display: block; width: 100%; max-width: 100%; height: auto;}
+
+/* 디스플레이 영역 */
+#content {margin: 0 auto;}
+#display_section .desc { font-family: 'PT Serif'; color: #616161; line-height: 1.9; margin-bottom: 64px; }
+
+/* 프로모션 영역 */
+#promotion_section .promotion_list li { margin-top: 56px;}
+#promotion_section .promotion_list img { height: 52px;}
+#promotion_section .promotion_list h3 { margin: 32px 0 24px; font-weight: normal; color: #3f51b5;}
+#promotion_section .promotion_list p { font-size: 14px; font-family: 'PT serif'; color:#616161; line-height: 1.5;}
+
+/* 워크 영역 */
+.work_list li { width: 100%; }
+.work_list li a { display: block; width: 100%; height: 100%; margin: 0 auto; position: relative; overflow: hidden;}
+.work_list li .info { position: absolute; width: 100%; height: 100%; background: #3f51b5; opacity: 0; text-align: left; padding: 30px; box-sizing: border-box; transition: .3s;}
+.work_list li .info:hover { opacity: 1; background: #3f51b5; transition: .3s; }
+.work_list li .info h3 {color: white; font-weight: normal; font-size: 20px; margin-bottom: 8px;}
+.work_list li .info span {color: white; font-weight: normal; font-size: 14px; margin-bottom: 10px;}
+.work_list li a img { display: block; width: 100%; max-width: 100%; height: auto; height: 100%; }
+
+/* 최근 글 영역 */
+#blog_section { margin-top: 83px;}
+#blog_section .sec_tit { margin-bottom: 50px; text-align: center;}
+#blog_section #blog_list li { width: 100%; margin-top: 44px;;}
+#blog_section #blog_list li:first-child { margin-top: 0;}
+#blog_section #blog_list li img { display: block; width: 100%; max-width: 100%; height: auto;}
+#blog_section #blog_list li time { display: block; margin: 11px 0 8px; color: #9e9e9e; text-align: left; font-size: 12px;}
+#blog_section #blog_list li a { display: block; color: #313131; line-height: 1.5; font-size: 14px; text-align: left;;}
+
+/* 컨텍트 영역 */
+
+#contact_section {margin-top: 110px;}
+.form input { padding-bottom: 15px; margin-bottom: 38px;}
+textarea#message { font-family: 'Montserrat', 'sans-serif'; height: 167px; }
+.send_btn { text-align: right;}
+.send_btn button { font-family: 'Montserrat', 'sans-serif'; margin-top: 37px; background: #3f51b5; border: none; color: white; padding: 15px 20px; font-size: 12px;}
+
+#footer { width: 100%; margin: 104px auto;}
+#footer p {color: #3f51b5}
+iframe { width: 100%; margin-bottom: 30px; height: 424px;}
+.copyright { margin: 21px 0; color:#3f51b5; }
+
+
+/****************** 태블릿 ************************/
+@media all and (min-width: 768px){
+
+    .sec_tit { margin-bottom: 50px; margin-top: 84px;}
+
+    /* 헤더 영역 */
+    #header { position: static; padding: 28px 52px;}
+    #header #gnb { display: block; position: static; float: right; background: none; width: auto; float: right;}
+    #header #gnb li { border-bottom: 0; display: inline-block;}
+    #header #gnb li a{ padding: 0; color: #3f51b5; font-size: 16px; margin-left: 17px; margin-top: 6px;}
+    #header #menu_toggle_btn {display: none;}
+    #header #gnb { display: block !important;}
+    
+    /* 디스플레이 영역 */
+    #display_section { width: 95%; margin: 0 auto;}
+    #promotion_section { width: 95%; margin: 0 auto;}
+    #promotion_section .promotion_list{ display: flex; justify-content: space-between;}
+    #promotion_section .promotion_list li{ width: 23%;}
+
+    /* 워크 영역 */
+    
+    .work_list { display: flex; flex-wrap: wrap;}
+    .work_list li { width: 50%; }
+
+    #blog_section #blog_list li:first-child { margin-top: 44px;}
+    #blog_list { display: flex; justify-content: space-between; flex-wrap: wrap;}
+    #blog_list li { width: 30%; max-width: 30%; }
+
+    /* 컨택트 영역 */
+    .form_box { margin-top: 64px;}
+    .form { width: 48%; float: left; }
+    .textarea { width: 48%; float: right;}
+}
+
+
+/****************** 웹 피씨 ************************/
+@media all and (min-width: 1200px){
+    #header #gnb { display: block !important;}
+    /* 디스플레이 영역 */
+    #display_section .container h2 { text-align: left; width: 38%; float: left; }
+    #display_section .container p { padding: 0 0 0 10px;width: 57%; float: right; margin-top: 80px; text-align: left; box-sizing: border-box; position: relative;}
+    #display_section .container p::before { content: ''; display: inline-block; width: 10px; height: 45px; border-left: 2px solid rgb(224, 224, 224); position: absolute; box-sizing: border-box; padding: 0; top: 10px; left: -15px;}
+
+    /* 워크 영역 */
+    #work_section .sec_tit { width: 90%; max-width: 1132px; margin: 0 auto; text-align: left; margin-bottom: 50px; margin-top: 84px;}
+    .work_list li { width: 25%;}
+
+    /* 블로그 영역 */
+    #blog_section .container h2 { text-align: left; width: 25%; float: left; margin-top: 40px;}
+    #blog_list li { width: 32%; max-width: 32%;}
+
+    /* 컨택트 영역 */
+    #contact_section .container h2 { text-align: left; width: 25%; float: left;}
+    .form_box .form, .form_box .textarea { margin-top: 84px;}
+}
